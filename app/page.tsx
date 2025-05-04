@@ -1,14 +1,25 @@
-import React from 'react'
 
-const page = () => {
+'use client';
+
+import Logout from '@/components/auth/logout';
+import { authClient } from '@/lib/auth-client';
+
+
+import React from 'react';
+
+
+const Page = () => { // Renamed component to follow convention (PascalCase)
+
+
+
+ 
+
   return (
-    <div className="text-center mx-auto  flex flex-col h-full w-full ">
-      <h1 className="text-2xl w-screen h-[50vh] pt-10 bg-black text-white border-b-2  ">
-        kevin-next-app
-      </h1>
-      <p className='text-2xl pt-10 '>boilderplate of kevin </p>
+    <div className="text-center mx-auto flex flex-col h-full w-full items-center justify-center p-4">
+      hii
+      <Logout/>
     </div>
   );
 }
 
-export default page
+export default Page 
